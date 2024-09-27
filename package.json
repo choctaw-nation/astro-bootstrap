@@ -1,5 +1,5 @@
 {
-  "name": "twm-starter",
+  "name": "astro-bootstrap-starter",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,11 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.3",
     "@astrojs/mdx": "^3.1.7",
     "@astrojs/rss": "^4.0.7",
     "@astrojs/sitemap": "^3.1.6",
     "astro": "^4.15.9",
-    "@astrojs/check": "^0.9.3",
+    "bootstrap": "^5.3.3",
+    "sass": "^1.79.3",
     "typescript": "^5.6.2"
   }
 }
