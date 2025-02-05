@@ -9,7 +9,7 @@
 * Also, you can add custom colors with the sass `map` below
 */
 
-$primary: v.$color-purple;
+$primary: #51276e;
 $secondary: #6c757d;
 
 // ================================================
@@ -19,7 +19,10 @@ $secondary: #6c757d;
 */
 $font-size-base: 1rem;
 $font-family-sans-serif: v.$font-body;
-$font-family-monospace: Monaspace Neon, 'Courier New', monospace;
+$font-family-monospace:
+    Monaspace Neon,
+    'Courier New',
+    monospace;
 
 // LINKS
 $link-color: $primary;
@@ -31,7 +34,7 @@ $headings-font-weight: 600;
 $headings-color: $primary;
 
 /**
-* Minor Third Type Scale
+* Minor Second Type Scale
 * @see https://typescale.com/
 */
 
@@ -64,13 +67,13 @@ $input-btn-padding-y-sm: 0.25rem;
 * Navbar
 */
 
-$navbar-light-active-color: $secondary;
-$navbar-light-hover-color: $secondary;
-$navbar-light-color: white;
-$navbar-light-icon-color: white;
-$navbar-light-toggler-border-color: white;
-$navbar-light-brand-color: white;
-$navbar-light-brand-hover-color: $secondary;
+// $navbar-light-active-color: $secondary;
+// $navbar-light-hover-color: $secondary;
+// $navbar-light-color: white;
+// $navbar-light-icon-color: white;
+// $navbar-light-toggler-border-color: white;
+// $navbar-light-brand-color: white;
+// $navbar-light-brand-hover-color: $secondary;
 
 // ================================================
 
@@ -89,6 +92,7 @@ $offcanvas-color: white;
 */
 $enable-shadows: false;
 $enable-dark-mode: false;
+$enable-rounded: false;
 
 // ================================================
 
@@ -98,9 +102,7 @@ $enable-dark-mode: false;
 // Map Overrides Here (Optional)
 
 // Custom Colors to extend the theme with
-$custom-colors: (
-    'purple': v.$color-purple,
-);
+$custom-colors: ();
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // Required Bootstrap Modules
@@ -116,7 +118,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 // Override Bootstrap Buttons
 @each $color, $value in $theme-colors {
     .btn-#{$color} {
-        @if $color == 'primary' or $color == 'purple' {
+        @if $color == 'primary' {
             /**
 			* Override the styles with the `button-variant` mixin
 			* @see https://getbootstrap.com/docs/5.3/components/buttons/#sass-loops
