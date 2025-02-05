@@ -37,6 +37,7 @@ All commands are run from the root of the project, from a terminal:
 - Updated: The `Header` component more closely aligns to the basic config in the [CNO Template Theme](https://github.com/choctaw-nation/cno-template-theme/blob/main/wp-content/themes/cno-starter-theme/header.php) (aka uses the `.navbar` + `.navbar-expand-*` classes + the Offcanvas Component )
 - Updated: Links now use new `BASE_URL` const, powered by `astro.config.mjs` file
 - Updated: Quick Start has actual instructions for quickly starting
+- Updated: `deploy.yml` now uses bun instead of npm for quicker build/deploy times
 - Fixed: `_breakpoints.scss` now `use`s namespaced functions (instead of the deprecated global functions)
 - Chore: Updated packages
 - Chore: Removed unused astro integrations (RSS, Sitemap, MDX)
